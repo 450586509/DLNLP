@@ -22,5 +22,5 @@ B：begin  E：end  M:middle   S:sigle
 
 dataUtils 数据预处理：
 - 将word映射为index
-- n个字的句子映射为[x1,x2,x3,...,xn]。其中$x_i$为list，包含字$w_i$的context.
-- dataUtils也计算了。每个tag的[B,E,M,S]的初始概率和相互的转移概率。
+- 把n个字的句子映射为[x1,x2,x3,...,xn]。其中x_i为list，指w_i的context.
+- dataUtils也计算了[B,E,M,S]的初始概率和相互的转移概率。
