@@ -5,6 +5,7 @@
 import numpy as np
 import codecs
 from keras.preprocessing import sequence
+
 from keras.optimizers import SGD, RMSprop, Adagrad
 from keras.utils import np_utils
 from keras.models import Sequential,Graph, model_from_json
@@ -113,7 +114,6 @@ def cwsSent(sent, model, cwsInfo):
             word = ''
         elif corpus_tags[t] == 'M':
             word += sent[i]
-
     return ss
 
 def cwsFile(fname, dstname, model, cwsInfo):

@@ -83,5 +83,6 @@ def example():
                    trans_p,
                    emit_p)
 
+
 if __name__ == '__main__':
     print(example())

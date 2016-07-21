@@ -22,6 +22,7 @@ def saveCwsInfo(path, cwsInfo):
 def loadCwsInfo(path):
     '''载入分词训练数据字典和概率'''
     print('load cws info from %s'%path)
+
     fd = open(path, 'r')
     line = fd.readline()
     j = json.loads(line.strip())
